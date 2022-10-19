@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <form action="skrypt" method="post">
+
+    <label for="name">Imię: </label>
+    <input type="text" name="name" id="name"> <br><br>
+
+    <label for="surname">Nazwisko: </label>
+    <input type="text" name="surname" id="surname"><br><br>
+
+    <label for="mail">E-mail </label>
+    <input type="email" name="mail" id="mail"><br><br>
+
+    <label for="phone">Telefon: </label>
+    <input type="tel" name="phone" id="phone"><br><br>
+
+    <label for="city">Miasto: </label>
+    <select name="city" id="city">
+        <option value="krakow">Kraków</option>
+        <option value="warszawa">Warszawa</option>
+        <option value="gdansk">Gdańsk</option>
+    </select><br><br>
+
+    <label for="gender">Płeć: </label><br>
+    <input type="radio" name="gender" id="gender">Mężczyzna
+    <input type="radio" name="gender">Kobieta<br><br>
+
+    <label for="rodo">Zgoda RODO: </label>
+    <input type="checkbox" name="rodo" id="rodo"><br><br>
+
+    <label for="message">Wiadomość: </label>
+    <textarea name="message" id="message"></textarea><br><br>
+    
+    <input type="submit" value="Wyślij">
+    </form>
+</body>
+
+</html>
