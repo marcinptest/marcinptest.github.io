@@ -1,0 +1,58 @@
+* {
+    text-transform: uppercase;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: red;
+    height: 50px;
+    padding-top: 25px;
+}
+
+.central {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.tablet {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.opis {
+    background-color: deepskyblue;
+    width: 80%;
+}
+
+.right {
+    background-color: pink;
+    width: 20%;
+}
+
+.left {
+    background-color: green;
+    width: 20%;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+@media (max-width: 992px) {
+
+    .left, .tablet {
+        width: 100%
+    }
+}
+
+@media (max-width: 768px) {
+
+    .left,
+    .opis,
+    .right {
+        width: 100%
+    }
+}
