@@ -7,7 +7,7 @@ $(document).ready(function () {
             .done(function (data) {
                 let info = "Wariant 1";
                 let pId = $('<p></p>').text(`Post Id: ${data.id}`);
-                let pUserId = $('<p></p>').text(`User Id: ${data.userid}`);
+                let pUserId = $('<p></p>').text(`User Id: ${data.userId}`);
                 let pTitle = $('<p></p>').text(`Title : ${data.title}`);
                 let pBody = $('<p></p>').text(`Body  : ${data.body}`);
                 let hr = $('<hr></hr>');
@@ -33,7 +33,7 @@ $.getJSON('https://akademia108.pl/api/ajax/get-post.php')
 .done(function (data) {
     let info = "Wariant 2";
     let pId = $('<p></p>').text(`Post Id: ${data.id}`);
-    let pUserId = $('<p></p>').text(`User Id: ${data.userid}`);
+    let pUserId = $('<p></p>').text(`User Id: ${data.userId}`);
     let pTitle = $('<p></p>').text(`Title : ${data.title}`);
     let pBody = $('<p></p>').text(`Body  : ${data.body}`);
     let hr = $('<hr></hr>');

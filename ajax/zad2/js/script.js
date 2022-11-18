@@ -13,7 +13,7 @@ const getData = () => {
 
 
         pId.innerText = `Post Id: ${data.id}`;
-        pUserId.innerText = `User Id: ${data.pUserId}`;
+        pUserId.innerText = `User Id: ${data.userId}`;
         pTitle.innerText = `Title: ${data.title}`;
         pBody.innerText = `Body: ${data.body}`;
 
