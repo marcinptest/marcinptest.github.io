@@ -1,6 +1,12 @@
 .kolor {
-   height: 50px;
-   width: 50px;
+   height: 100px;
+   width: 100px;
    margin: auto;
-   padding-top: 13px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.kolor i {
+   font-size: 50px;
 }
