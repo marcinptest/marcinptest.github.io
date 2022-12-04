@@ -9,7 +9,7 @@
 
     #about {
         margin-top: $baseline * 4;
-		padding: ($baseline * 4) $padding-none;
+        padding: ($baseline * 4) $padding-none;
 
         .about-box {
             margin: ($baseline * 3) auto $margin-none;
@@ -20,15 +20,17 @@
 
             .icon-about {
                 color: $color-text-primary;
-                width: $base-font-size * 4.5;
-                height: $base-font-size * 4.5;
+                width: $base-font-size * 6;
+                height: $base-font-size * 6;
                 border-radius: 100%;
-                line-height: $base-font-size * 4.5;
+                line-height: $base-font-size * 6;
                 background-color: $color-primary;
                 margin: $margin-none auto $baseline;
             }
+
+
         }
-	}
+    }
 
     @media(max-width: 768px) {
 
@@ -37,17 +39,19 @@
         }
     }
 
-    #counters-numbers, #counters-progress { 
-        height: auto;  
-        width: 100%; 
-        position: relative; 
+    #counters-numbers,
+    #counters-progress {
+        height: auto;
+        width: 100%;
+        position: relative;
         padding: ($baseline * 4) $padding-none;
 
         .container {
             position: relative;
             z-index: 11;
 
-            p, h4 {
+            p,
+            h4 {
                 color: $color-text-primary;
             }
 
@@ -72,11 +76,12 @@
                 .text-primary {
                     color: $color-primary;
                 }
+
             }
         }
     }
-    
-    #counters-numbers { 
+
+    #counters-numbers {
         background: url(../images/counters/counters_numbers.jpg) no-repeat 50% 0 fixed;
         -webkit-background-size: 100% 300%;
         -moz-background-size: 100% 300%;
@@ -84,7 +89,7 @@
         background-size: 100% 300%;
     }
 
-    #counters-progress { 
+    #counters-progress {
         background: url(../images/counters/counters_progres.jpg) 50% 0 fixed;
         color: $color-text-primary;
 
@@ -98,19 +103,19 @@
         }
     }
 
-	#portfolio {
-		padding: $padding-none;
+    #portfolio {
+        padding: $padding-none;
         text-transform: $text-transform-base;
 
-		.col-lg-3 {
+        .col-lg-3 {
             padding-left: $padding-none;
-			padding-right: $padding-none;
-		}
+            padding-right: $padding-none;
+        }
 
-		.col-sm-6 {
-			padding-left: $padding-none;
-			padding-right: $padding-none;
-		}
+        .col-sm-6 {
+            padding-left: $padding-none;
+            padding-right: $padding-none;
+        }
 
         .col-md-3 {
             padding-left: $padding-none;
@@ -134,12 +139,12 @@
                 position: absolute;
                 bottom: 0;
                 width: 100%;
-                height:100%;
+                height: 100%;
                 opacity: 0;
                 background: $color-portfolio-hover;
-                -webkit-transition: all .35s;
-                -moz-transition: all .35s;
-                transition: all .35s;
+                -webkit-transition: all 1.00s;
+                -moz-transition: all 1.00s;
+                transition: all 1.00s;
 
                 .portfolio-box-caption-content {
                     position: absolute;
@@ -156,7 +161,7 @@
                     .project-name h6 {
                         color: $color-primary;
                         padding: $padding-none 15px;
-                    } 
+                    }
                 }
             }
         }
@@ -167,8 +172,8 @@
     }
 
     #counters-services {
-    background-color: $color-background;
-    padding: ($baseline * 4) $padding-none $baseline;
+        background-color: $color-background;
+        padding: ($baseline * 4) $padding-none $baseline;
 
         .icon-services {
             color: $color-primary;
@@ -177,7 +182,19 @@
             border-radius: 100%;
             line-height: $base-font-size * 4.5;
             border: 2px solid $color-primary;
+            transition: .5s;
+
+            &:hover {
+                transform: rotate(-45deg);
+            }
+
+            .divider-light-dark {
+                width: $baseline *8;
+                opacity: 50%;
+            }
         }
+
+
 
 
         .counters-box {
@@ -188,15 +205,16 @@
             }
 
             .divider-light-dark {
-                width: $baseline * 2;
+                width: 25px;
                 margin-left: $padding-none;
                 margin-bottom: 20px;
+                opacity: 50%;
             }
         }
     }
 
     @media(max-width: 768px) {
-        
+
         #counters-services {
 
             .counters-box {
@@ -229,7 +247,7 @@
                     h5:hover {
                         color: $color-primary;
                     }
-                } 
+                }
             }
         }
     }
@@ -244,7 +262,7 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-        
+
             ul.social-buttons {
                 margin: ($baseline * 2) auto ($baseline * 3);
 
@@ -262,7 +280,9 @@
                     transition: all .3s;
                 }
 
-                li a:hover, li a:focus, li a:active {
+                li a:hover,
+                li a:focus,
+                li a:active {
                     background-color: $color-link;
                 }
             }
